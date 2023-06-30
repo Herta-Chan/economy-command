@@ -21,10 +21,10 @@ module.exports = {
       bet = parseInt(args[0])
     } else if (args[0].toLowerCase() == "all") {
       bet = money
-      if (bet > 50000) bet = 50000
+      if (bet > 10000000000) bet = 10000000000
     } else return client.func.error(`${client.emoji.x} Số tiền không hợp lệ`, message.channel)
-    if (bet > 50000) {
-      return client.func.error(`${client.emoji.x} Tối đa đặt được 50,000 ${client.emoji.money}`, message.channel)
+    if (bet > 10000000000) {
+      return client.func.error(`${client.emoji.x} Tối đa đặt được 10,000,000,000 ${client.emoji.money}`, message.channel)
     }
     if (bet < 0) {
       return client.func.error(
